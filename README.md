@@ -12,10 +12,10 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 
 ## 📚 Conteúdo
 
-### Módulo 1: Tipos de Autenticação Mais Comuns
+### ✔️Módulo 1: Tipos de Autenticação Mais Comuns
 - Basic, Form e Bearer Token
 
-### Módulo 2: Configuração Básica do Spring Security
+### ✔️Módulo 2: Configuração Básica do Spring Security
 - Introdução ao Spring Security
 
 ### Módulo 3: Configurando Credenciais de Acesso
