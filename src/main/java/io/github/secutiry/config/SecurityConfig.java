@@ -18,6 +18,8 @@ public class SecurityConfig
 			customizer.requestMatchers("/public").permitAll();
 				customizer.anyRequest().authenticated();
 			})
-			.httpBasic(Customizer.withDefaults()).build();
+			.httpBasic(Customizer.withDefaults())
+			.formLogin(Customizer.withDefaults())
+			.build();
 	}
 }
