@@ -1,5 +1,6 @@
 package io.github.secutiry.api;
 
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,8 +14,9 @@ public class FooController
 	}
 
 	@GetMapping("/private")
-	public String privateEndpoint()
+	public String privateEndpoint(Authentication authentication)
 	{
-		return "private route ok";
+		System.out.println(authentication.getClass());
+		return "private route ok ! Usuário autenticado: " + authentication.getName();
 	}
 }

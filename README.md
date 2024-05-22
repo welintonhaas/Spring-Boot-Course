@@ -24,7 +24,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 4: Processo de Autenticação no Security Filter Chain
 - Como o Spring Security processa a autenticação
 
-### Módulo 5: Entendendo o Authentication
+### ✔️Módulo 5: Entendendo o Authentication
 - Conceitos fundamentais de autenticação
 
 ### Módulo 6: Utilizando um Authentication Provider
