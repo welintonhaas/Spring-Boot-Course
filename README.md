@@ -30,7 +30,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 6: Utilizando um Authentication Provider
 - Implementação de um provider de autenticação
 
-### Módulo 7: Autenticação Via Filtro
+### ✔️Módulo 7: Autenticação Via Filtro
 - Autenticação através de filtros personalizados
 
 ### Módulo 8: Configurando Autorização Baseada em Roles e Authorities
