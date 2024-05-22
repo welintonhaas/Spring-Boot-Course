@@ -21,7 +21,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 3: Configurando Credenciais de Acesso
 - Gerenciamento de usuários e senhas
 
-### Módulo 4: Processo de Autenticação no Security Filter Chain
+### ✔️Módulo 4: Processo de Autenticação no Security Filter Chain
 - Como o Spring Security processa a autenticação
 
 ### Módulo 5: Entendendo o Authentication
