@@ -27,7 +27,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 5: Entendendo o Authentication
 - Conceitos fundamentais de autenticação
 
-### Módulo 6: Utilizando um Authentication Provider
+### ✔️Módulo 6: Utilizando um Authentication Provider
 - Implementação de um provider de autenticação
 
 ### Módulo 7: Autenticação Via Filtro
