@@ -18,7 +18,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 2: Configuração Básica do Spring Security
 - Introdução ao Spring Security
 
-### Módulo 3: Configurando Credenciais de Acesso
+### ✔️Módulo 3: Configurando Credenciais de Acesso
 - Gerenciamento de usuários e senhas
 
 ### Módulo 4: Processo de Autenticação no Security Filter Chain
