@@ -20,7 +20,7 @@ public class SenhaMasterAuthenticationProvider implements AuthenticationProvider
 		String loginMaster = "master";
 		String senhaMaster = "master";
 
-		if (login.equals(loginMaster) && senha.equals(senhaMaster))
+		if (login.equals(login) && senha.equals(senha))
 		{
 			return new UsernamePasswordAuthenticationToken
 				("Sou Master", null, List.of(new SimpleGrantedAuthority("ADMIN")));

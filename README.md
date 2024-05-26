@@ -36,7 +36,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 8: Configurando Autorização Baseada em Roles e Authorities
 - Definição de roles e authorities
 
-### Módulo 9: Definindo As Permissões de Acesso Via Controllers
+### ✔️Módulo 9: Definindo As Permissões de Acesso Via Controllers
 - Restrição de acesso baseada em roles
 
 ### Módulo 10: Criando o Domínio Para o Desenvolvimento de um Controle de Acesso
