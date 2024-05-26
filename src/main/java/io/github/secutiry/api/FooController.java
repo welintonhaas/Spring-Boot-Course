@@ -1,5 +1,6 @@
 package io.github.secutiry.api;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,15 +9,22 @@ import org.springframework.web.bind.annotation.RestController;
 public class FooController
 {
 	@GetMapping("/public")
-	public String publicEndpoint()
+	public ResponseEntity<String> publicRoute()
 	{
-		return "public route ok";
+		return ResponseEntity.ok("public route ok");
 	}
 
 	@GetMapping("/private")
-	public String privateEndpoint(Authentication authentication)
+	public ResponseEntity<String> privateRoute(Authentication authentication)
 	{
 		System.out.println(authentication.getClass());
-		return "private route ok ! Usuário autenticado: " + authentication.getName();
+		return ResponseEntity.ok("private route ok ! Usário autenticado: " + authentication.getName());
+	}
+
+	@GetMapping("/admin")
+	public ResponseEntity<String> adminRoute(Authentication authentication)
+	{
+		System.out.println(authentication.getClass());
+		return ResponseEntity.ok("Admin Route Ok!");
 	}
 }

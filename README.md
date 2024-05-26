@@ -33,7 +33,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 7: Autenticação Via Filtro
 - Autenticação através de filtros personalizados
 
-### Módulo 8: Configurando Autorização Baseada em Roles e Authorities
+### ✔️Módulo 8: Configurando Autorização Baseada em Roles e Authorities
 - Definição de roles e authorities
 
 ### Módulo 9: Definindo As Permissões de Acesso Via Controllers
