@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class IdentificacaoUsuario
 {
-	private Long id;
+	private String id;
 	private String nome;
 	private String login;
 	private List<String> permissoes;
 
-	public IdentificacaoUsuario(Long id, String nome, String login, List<String> permissoes)
+	public IdentificacaoUsuario(String id, String nome, String login, List<String> permissoes)
 	{
 		this.id = id;
 		this.nome = nome;
