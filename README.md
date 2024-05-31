@@ -51,7 +51,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
 - Segurança na armazenagem de senhas
 
-### Módulo 14: Criando a Authentication Customizada com Identificação do Usuário Logado
+### ✔️Módulo 14: Criando a Authentication Customizada com Identificação do Usuário Logado
 - Personalização da autenticação
 
 ### Módulo 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
