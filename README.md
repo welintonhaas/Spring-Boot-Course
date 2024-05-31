@@ -48,7 +48,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 12: Cadastrando Usuários com Suas Permissões
 - Associação de usuários a grupos e permissões
 
-### Módulo 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
+### ✔️Módulo 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
 - Segurança na armazenagem de senhas
 
 ### Módulo 14: Criando a Authentication Customizada com Identificação do Usuário Logado
