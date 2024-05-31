@@ -1,12 +1,15 @@
 package io.github.secutiry.domain.entity;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
+@Entity
+@Data
 public class UsuarioGrupo
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private String id;
 
 	private String nome;
 

@@ -12,7 +12,7 @@ public class Usuario
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.UUID)
-	private Long id;
+	private String id;
 	private String login;
 	private String senha;
 	private String nome;

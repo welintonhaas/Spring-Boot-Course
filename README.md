@@ -42,7 +42,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 10: Criando o Domínio Para o Desenvolvimento de um Controle de Acesso
 - Modelagem de domínio para controle de acesso
 
-### Módulo 11: Cadastrando Grupos de Usuário
+### ✔️Módulo 11: Cadastrando Grupos de Usuário
 - Gestão de grupos de usuários
 
 ### Módulo 12: Cadastrando Usuários com Suas Permissões
