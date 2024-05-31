@@ -1,5 +1,6 @@
 package io.github.secutiry.config;
 
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
@@ -26,6 +27,7 @@ public class SecurityConfig
 	public SecurityFilterChain filterChain(
 		HttpSecurity http,
 		SenhaMasterAuthenticationProvider senhaMasterAuthenticationProvider,
+		CustomAuthenticationProvider customAuthenticationProvider,
 		CustomFilter customFilter
 	) throws Exception
 	{
@@ -37,6 +39,7 @@ public class SecurityConfig
 			.httpBasic(Customizer.withDefaults())
 			.formLogin(Customizer.withDefaults())
 			.authenticationProvider(senhaMasterAuthenticationProvider)
+			.authenticationProvider(customAuthenticationProvider)
 			.addFilterBefore(customFilter, UsernamePasswordAuthenticationFilter.class)
 			.build();
 	}

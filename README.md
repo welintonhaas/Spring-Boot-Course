@@ -55,7 +55,10 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 - Personalização da autenticação
 
 ### ✔️Módulo 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
-- Implementação de lógica de autenticação personalizada
+- Criação da lógica de autenticação personalizada
+
+### ✔️Módulo 16: Integrando a base de usuarios com o Spring Security
+- Implementação da lógica de autenticação personalizada
 
 ## 🛠️ Pré-requisitos
 
