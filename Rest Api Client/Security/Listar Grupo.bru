@@ -1,0 +1,22 @@
+meta {
+  name: Listar Grupo
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8080/grupos
+  body: none
+  auth: basic
+}
+
+auth:basic {
+  username: master
+  password: master
+}
+
+body:json {
+  {
+    "nome" : "RH"
+  }
+}

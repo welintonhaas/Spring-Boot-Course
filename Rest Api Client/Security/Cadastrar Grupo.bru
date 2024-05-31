@@ -1,0 +1,22 @@
+meta {
+  name: Cadastrar Grupo
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:8080/grupos
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: master
+  password: master
+}
+
+body:json {
+  {
+    "nome" : "GERENTE_RH"
+  }
+}

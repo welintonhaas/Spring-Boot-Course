@@ -1,0 +1,29 @@
+meta {
+  name: Cadastrar Usuario
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/usuarios
+  body: json
+  auth: basic
+}
+
+auth:basic {
+  username: master
+  password: master
+}
+
+body:json {
+  {
+    "usuario":{
+        "nome" : "gerente",
+        "login": "gerente",
+        "senha": "123456"
+    },
+    "permissoes" : [
+       "GERENTE_RH"
+    ]
+  }
+}
