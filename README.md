@@ -60,6 +60,9 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 16: Integrando a base de usuarios com o Spring Security
 - Implementação da lógica de autenticação personalizada
 
+### ✔️Finalizando Controle de Acesso e Testando tudo
+- Criar rota teste para RH e realizar testes de todas rotas autenticadas
+
 ## 🛠️ Pré-requisitos
 
 - Conhecimento básico de Java e Spring Boot.

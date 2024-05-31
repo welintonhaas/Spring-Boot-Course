@@ -7,10 +7,9 @@ meta {
 get {
   url: http://localhost:8080/private
   body: none
-  auth: basic
+  auth: none
 }
 
-auth:basic {
-  username: tom
-  password: 123456
+headers {
+  x-secret: secr3t
 }

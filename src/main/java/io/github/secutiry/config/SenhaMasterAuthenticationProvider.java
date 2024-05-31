@@ -1,11 +1,11 @@
 package io.github.secutiry.config;
 
+import io.github.secutiry.domain.security.CustomAuthentication;
+import io.github.secutiry.domain.security.IdentificacaoUsuario;
 import java.util.List;
 import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -22,8 +22,13 @@ public class SenhaMasterAuthenticationProvider implements AuthenticationProvider
 
 		if (loginMaster.equals(login) && senhaMaster.equals(senha))
 		{
-			return new UsernamePasswordAuthenticationToken
-				("Sou Master", null, List.of(new SimpleGrantedAuthority("ADMIN")));
+			IdentificacaoUsuario identificacaoUsuario = new IdentificacaoUsuario(
+				"id-Master",
+				"Master",
+				loginMaster,
+				List.of("ADMIN")
+			);
+			return new CustomAuthentication(identificacaoUsuario);
 		}
 
 		return null;
