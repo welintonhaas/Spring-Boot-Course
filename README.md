@@ -12,52 +12,52 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 
 ## 📚 Conteúdo
 
-### ✔️Módulo 1: Tipos de Autenticação Mais Comuns
+### ✔️Aula 1: Tipos de Autenticação Mais Comuns
 - Basic, Form e Bearer Token
 
-### ✔️Módulo 2: Configuração Básica do Spring Security
+### ✔️Aula 2: Configuração Básica do Spring Security
 - Introdução ao Spring Security
 
-### ✔️Módulo 3: Configurando Credenciais de Acesso
+### ✔️Aula 3: Configurando Credenciais de Acesso
 - Gerenciamento de usuários e senhas
 
-### ✔️Módulo 4: Processo de Autenticação no Security Filter Chain
+### ✔️Aula 4: Processo de Autenticação no Security Filter Chain
 - Como o Spring Security processa a autenticação
 
-### ✔️Módulo 5: Entendendo o Authentication
+### ✔️Aula 5: Entendendo o Authentication
 - Conceitos fundamentais de autenticação
 
-### ✔️Módulo 6: Utilizando um Authentication Provider
+### ✔️Aula 6: Utilizando um Authentication Provider
 - Implementação de um provider de autenticação
 
-### ✔️Módulo 7: Autenticação Via Filtro
+### ✔️Aula 7: Autenticação Via Filtro
 - Autenticação através de filtros personalizados
 
-### ✔️Módulo 8: Configurando Autorização Baseada em Roles e Authorities
+### ✔️Aula 8: Configurando Autorização Baseada em Roles e Authorities
 - Definição de roles e authorities
 
-### ✔️Módulo 9: Definindo As Permissões de Acesso Via Controllers
+### ✔️Aula 9: Definindo As Permissões de Acesso Via Controllers
 - Restrição de acesso baseada em roles
 
-### ✔️Módulo 10: Criando o Domínio Para o Desenvolvimento de um Controle de Acesso
+### ✔️Aula 10: Criando o Domínio Para o Desenvolvimento de um Controle de Acesso
 - Modelagem de domínio para controle de acesso
 
-### ✔️Módulo 11: Cadastrando Grupos de Usuário
+### ✔️Aula 11: Cadastrando Grupos de Usuário
 - Gestão de grupos de usuários
 
-### ✔️Módulo 12: Cadastrando Usuários com Suas Permissões
+### ✔️Aula 12: Cadastrando Usuários com Suas Permissões
 - Associação de usuários a grupos e permissões
 
-### ✔️Módulo 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
+### ✔️Aula 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
 - Segurança na armazenagem de senhas
 
-### ✔️Módulo 14: Criando a Authentication Customizada com Identificação do Usuário Logado
+### ✔️Aula 14: Criando a Authentication Customizada com Identificação do Usuário Logado
 - Personalização da autenticação
 
-### ✔️Módulo 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
+### ✔️Aula 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
 - Criação da lógica de autenticação personalizada
 
-### ✔️Módulo 16: Integrando a base de usuarios com o Spring Security
+### ✔️Aula 16: Integrando a base de usuarios com o Spring Security
 - Implementação da lógica de autenticação personalizada
 
 ### ✔️Finalizando Controle de Acesso e Testando tudo
