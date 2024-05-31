@@ -54,7 +54,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 14: Criando a Authentication Customizada com Identificação do Usuário Logado
 - Personalização da autenticação
 
-### Módulo 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
+### ✔️Módulo 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
 - Implementação de lógica de autenticação personalizada
 
 ## 🛠️ Pré-requisitos
