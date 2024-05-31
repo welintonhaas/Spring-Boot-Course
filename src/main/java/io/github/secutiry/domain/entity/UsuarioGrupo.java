@@ -20,4 +20,10 @@ public class UsuarioGrupo
 	@ManyToOne
 	@JoinColumn(name = "id_grupo")
 	private Grupo grupo;
+
+	public UsuarioGrupo(Usuario usuario, Grupo grupo)
+	{
+		this.usuario = usuario;
+		this.grupo = grupo;
+	}
 }

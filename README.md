@@ -45,7 +45,7 @@ Este projeto é uma iniciativa educacional voltada para quem deseja aprender sob
 ### ✔️Módulo 11: Cadastrando Grupos de Usuário
 - Gestão de grupos de usuários
 
-### Módulo 12: Cadastrando Usuários com Suas Permissões
+### ✔️Módulo 12: Cadastrando Usuários com Suas Permissões
 - Associação de usuários a grupos e permissões
 
 ### Módulo 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
