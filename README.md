@@ -1,4 +1,4 @@
-# 🛡️ Curso de Segurança em Spring Boot 🚀
+# 🛡️ Módulo do Curso de Segurança em Spring Boot 🚀
 
 <img src="https://static-00.iconduck.com/assets.00/spring-icon-512x512-bdmpbhxj.png" alt="Spring Boot" width="200">
 
