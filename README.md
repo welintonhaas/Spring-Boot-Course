@@ -2,7 +2,7 @@
 
 <img src="https://static-00.iconduck.com/assets.00/spring-icon-512x512-bdmpbhxj.png" alt="Spring Boot" width="200">
 
-Este projeto é uma iniciativa educacional voltada para quem deseja aprender sobre segurança em aplicações Spring Boot. Aprenda a proteger suas aplicações contra vulnerabilidades comuns e melhorar sua defesa contra ataques.
+Este projeto com objetivos educacionais visando aprender sobre segurança em aplicações Spring Boot. Aprender a proteger as aplicações de vulnerabilidades comuns e melhorar a defesa contra ataques.
 
 ## 🎯 Objetivos
 
