@@ -19,9 +19,12 @@ public class VendasApplication
 {
 
 	Logger log = Logger.getLogger(VendasApplication.class.getName());
+
 	@Bean
 	public CommandLineRunner init(@Autowired ClientesRepository clientes){
 		return args -> {
+
+			log.info("Salavando Clientes");
 			clientes.salvar(
 				new Cliente("Fulano")
 			);
@@ -30,8 +33,34 @@ public class VendasApplication
 				new Cliente("Ciclano")
 			);
 
+			log.info("Obtendo todos Clientes");
 			List<Cliente> todosClientes = clientes.obterTodos();
 			todosClientes.forEach(msg -> log.info(msg.toString()));
+
+			log.info("Alterando Clientes");
+			todosClientes.forEach(c -> {
+				c.setNome(c.getNome()+" Alterado");
+				clientes.atualizar(c);
+			});
+
+			log.info("Buscando por Fulano");
+			clientes.obterPorNome("Ful%").forEach(msg -> log.info(msg.toString()));
+
+			log.info("Deletando Clientes");
+			todosClientes.forEach(clientes::deletar);
+
+			log.info("Obtendo todos Clientes");
+			todosClientes = clientes.obterTodos();
+
+			if (todosClientes.isEmpty())
+			{
+				log.info("Nenhum cliente encontrado");
+			}
+			else
+			{
+				todosClientes.forEach(msg -> log.info(msg.toString()));
+			}
+
 		};
 	}
 
