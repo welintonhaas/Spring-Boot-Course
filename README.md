@@ -1,71 +1,55 @@
-# 🛡️ Módulo do Curso de Segurança em Spring Boot 🚀
+# Curso Completo de Spring Framework
 
 <img src="https://static-00.iconduck.com/assets.00/spring-icon-512x512-bdmpbhxj.png" alt="Spring Boot" width="200">
 
-Este projeto tem objetivos educacionais visando aprender sobre segurança em aplicações Spring Boot. Aprender a proteger as aplicações de vulnerabilidades comuns e melhorar a defesa contra ataques.
-
-## 🎯 Objetivos
-
-- Entender os princípios fundamentais da segurança em aplicações Spring Boot.
-- Aprender a implementar medidas de segurança eficazes.
-- Conhecer ferramentas e técnicas para detectar e mitigar vulnerabilidades.
+Este curso oferece uma jornada abrangente através da arquitetura e dos módulos do Spring Framework, transformando você em um especialista neste poderoso ecossistema de desenvolvimento Java.
 
 ## 📚 Conteúdo
 
-### ✔️Aula 1: Tipos de Autenticação Mais Comuns
-- Basic, Form e Bearer Token
+### Desenvolvimento de Aplicações Enterprise
 
-### ✔️Aula 2: Configuração Básica do Spring Security
-- Introdução ao Spring Security
+- Crie aplicações robustas e escaláveis utilizando Spring Boot
+- Entenda os padrões e melhores práticas para desenvolvimento enterprise
 
-### ✔️Aula 3: Configurando Credenciais de Acesso
-- Gerenciamento de usuários e senhas
+### Domínio dos Módulos do Spring
 
-### ✔️Aula 4: Processo de Autenticação no Security Filter Chain
-- Como o Spring Security processa a autenticação
+- Explore em profundidade cada componente do ecossistema Spring
+- Saiba quando e como utilizar cada módulo para otimizar seu código
 
-### ✔️Aula 5: Entendendo o Authentication
-- Conceitos fundamentais de autenticação
+### Maestria no Framework Java mais Utilizado
 
-### ✔️Aula 6: Utilizando um Authentication Provider
-- Implementação de um provider de autenticação
+- Torne-se um especialista reconhecido no mercado em Spring
+- Entenda por que o Spring é a escolha número um para projetos Java corporativos
 
-### ✔️Aula 7: Autenticação Via Filtro
-- Autenticação através de filtros personalizados
+### Trabalhando com Bases de Dados
 
-### ✔️Aula 8: Configurando Autorização Baseada em Roles e Authorities
-- Definição de roles e authorities
+- Implemente conexões eficientes com bancos de dados usando JPA
+- Domine operações CRUD e consultas complexas com entidades
 
-### ✔️Aula 9: Definindo As Permissões de Acesso Via Controllers
-- Restrição de acesso baseada em roles
+### Desenvolvendo API's RESTful Avançadas
 
-### ✔️Aula 10: Criando o Domínio Para o Desenvolvimento de um Controle de Acesso
-- Modelagem de domínio para controle de acesso
+- Crie serviços web robustos e seguros
+- Implemente recursos avançados como paginação, filtros e validações
 
-### ✔️Aula 11: Cadastrando Grupos de Usuário
-- Gestão de grupos de usuários
+### Segurança Avançada com Spring Security
 
-### ✔️Aula 12: Cadastrando Usuários com Suas Permissões
-- Associação de usuários a grupos e permissões
+- Proteja suas aplicações contra vulnerabilidades comuns
+- Implemente autenticação e autorização personalizadas
 
-### ✔️Aula 13: Criptografando a Senha e Testando o Fluxo de Cadastro de Usuário e Permissões
-- Segurança na armazenagem de senhas
+### Autenticação JWT
 
-### ✔️Aula 14: Criando a Authentication Customizada com Identificação do Usuário Logado
-- Personalização da autenticação
+- Implemente sistemas de autenticação stateless com tokens JWT
+- Gerencie sessões de forma segura e escalável
 
-### ✔️Aula 15: Criando a Lógica do AuthenticationProvider para Uso no Controle de Acesso
-- Criação da lógica de autenticação personalizada
+### Documentação de API com Swagger
 
-### ✔️Aula 16: Integrando a base de usuarios com o Spring Security
-- Implementação da lógica de autenticação personalizada
+- Crie documentações claras e interativas para suas APIs
+- Melhore a colaboração entre equipes e clientes
 
-### ✔️Finalizando Controle de Acesso e Testando tudo
-- Criar rota teste para RH e realizar testes de todas rotas autenticadas
+## Por que este curso? 🎯
 
-## 🛠️ Pré-requisitos
-
-- Conhecimento básico de Java e Spring Boot.
+- Aborda todos os aspectos importantes do Spring Framework e suas tecnologias
+- Foco em prática real, não apenas teoria
 
 ## 🤝 Contribuição
 
