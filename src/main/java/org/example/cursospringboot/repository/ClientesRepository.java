@@ -1,12 +1,14 @@
 package org.example.cursospringboot.repository;
 
 
+import jakarta.persistence.EntityManager;
 import java.util.List;
 import org.example.cursospringboot.domain.entity.Cliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public class ClientesRepository
@@ -19,8 +21,12 @@ public class ClientesRepository
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
+	@Autowired
+	private EntityManager entityManager;
+
+	@Transactional
 	public void salvar(Cliente cliente){
-		jdbcTemplate.update(INSERT_SQL, cliente.getNome());
+		entityManager.persist(cliente);
 	}
 
 	public Cliente atualizar(Cliente cliente){
