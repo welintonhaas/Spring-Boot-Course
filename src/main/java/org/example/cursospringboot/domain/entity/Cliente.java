@@ -16,7 +16,7 @@ public class Cliente
 	@Column(name = "NOME",length = 100)
 	private String nome;
 
-	@OneToMany(mappedBy = "cliente")
+	@OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
 	private Set<Pedido> pedidos;
 
 	public Cliente(String nome)
@@ -30,10 +30,7 @@ public class Cliente
 		this.nome = nome;
 	}
 
-	public Cliente()
-	{
-
-	}
+	public Cliente() {}
 
 	public Integer getId()
 	{

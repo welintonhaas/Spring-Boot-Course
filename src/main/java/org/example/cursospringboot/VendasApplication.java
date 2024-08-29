@@ -1,9 +1,13 @@
 package org.example.cursospringboot;
 
+import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.List;
 import java.util.logging.Logger;
 import org.example.cursospringboot.domain.entity.Cliente;
+import org.example.cursospringboot.domain.entity.Pedido;
 import org.example.cursospringboot.repository.ClientesRepository;
+import org.example.cursospringboot.repository.PedidosRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
@@ -20,55 +24,29 @@ public class VendasApplication
 
 	Logger log = Logger.getLogger(VendasApplication.class.getName());
 
-	@Bean
-	public CommandLineRunner init(@Autowired ClientesRepository clientes){
+    @Bean
+    public CommandLineRunner init(
+            @Autowired ClientesRepository clientes,
+            @Autowired PedidosRepository pedidos
+	){
 		return args -> {
 
-			String nomeCliente1 = "Fulano";
-			log.info("Salavando Clientes");
-			clientes.save(
-				new Cliente(nomeCliente1)
+			Cliente fulano = clientes.save(
+				new Cliente("Fulano")
 			);
 
-			clientes.save(
-				new Cliente("Ciclano")
-			);
+			Pedido p = new Pedido();
+			p.setCliente(fulano);
+			p.setDataPedido(LocalDate.now());
+			p.setTotal(BigDecimal.valueOf(100));
 
-			log.info("Obtendo todos Clientes");
-			List<Cliente> todosClientes = clientes.findAll();
-			todosClientes.forEach(msg -> log.info(msg.toString()));
+			pedidos.save(p);
 
-			boolean existe = clientes.existsByNome(nomeCliente1);
-			log.info("Exite um cliente com o nome "+nomeCliente1+"? "+existe);
+			/*Cliente cliente = clientes.findClienteFetchPedidos(fulano.getId());
+			log.info(cliente.toString());
+			log.info(cliente.getPedidos().toString());*/
 
-			log.info("Alterando Clientes");
-			todosClientes.forEach(c -> {
-				c.setNome(c.getNome()+" Alterado");
-				clientes.save(c);
-			});
-
-			log.info("Buscando por "+nomeCliente1);
-			clientes.encontrarPorNome("Ful%").forEach(msg -> log.info(msg.toString()));
-
-			boolean existeAinda = clientes.existsByNome(nomeCliente1);
-			log.info("Exite um cliente com o nome "+nomeCliente1+"? "+existeAinda);
-
-			log.info("Deletando Clientes");
-            clientes.deleteAll(todosClientes);
-
-			log.info("Obtendo todos Clientes");
-			todosClientes = clientes.findAll();
-
-			if (todosClientes.isEmpty())
-			{
-				log.info("Nenhum cliente encontrado");
-			}
-			else
-			{
-				todosClientes.forEach(msg -> log.info(msg.toString()));
-			}
-
-
+			pedidos.findByCliente(fulano).forEach(c -> log.info(c.toString()));
 		};
 	}
 
