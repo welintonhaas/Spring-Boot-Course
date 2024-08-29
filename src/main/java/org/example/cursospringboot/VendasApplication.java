@@ -24,9 +24,10 @@ public class VendasApplication
 	public CommandLineRunner init(@Autowired ClientesRepository clientes){
 		return args -> {
 
+			String nomeCliente1 = "Fulano";
 			log.info("Salavando Clientes");
 			clientes.save(
-				new Cliente("Fulano")
+				new Cliente(nomeCliente1)
 			);
 
 			clientes.save(
@@ -37,17 +38,23 @@ public class VendasApplication
 			List<Cliente> todosClientes = clientes.findAll();
 			todosClientes.forEach(msg -> log.info(msg.toString()));
 
+			boolean existe = clientes.existsByNome(nomeCliente1);
+			log.info("Exite um cliente com o nome "+nomeCliente1+"? "+existe);
+
 			log.info("Alterando Clientes");
 			todosClientes.forEach(c -> {
 				c.setNome(c.getNome()+" Alterado");
 				clientes.save(c);
 			});
 
-			log.info("Buscando por Fulano");
+			log.info("Buscando por "+nomeCliente1);
 			clientes.findByNomeLike("Ful%").forEach(msg -> log.info(msg.toString()));
 
+			boolean existeAinda = clientes.existsByNome(nomeCliente1);
+			log.info("Exite um cliente com o nome "+nomeCliente1+"? "+existeAinda);
+
 			log.info("Deletando Clientes");
-			todosClientes.forEach(clientes::delete);
+            clientes.deleteAll(todosClientes);
 
 			log.info("Obtendo todos Clientes");
 			todosClientes = clientes.findAll();
@@ -60,6 +67,7 @@ public class VendasApplication
 			{
 				todosClientes.forEach(msg -> log.info(msg.toString()));
 			}
+
 
 		};
 	}
