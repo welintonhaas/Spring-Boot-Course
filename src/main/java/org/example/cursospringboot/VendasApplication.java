@@ -48,7 +48,7 @@ public class VendasApplication
 			});
 
 			log.info("Buscando por "+nomeCliente1);
-			clientes.findByNomeLike("Ful%").forEach(msg -> log.info(msg.toString()));
+			clientes.encontrarPorNome("Ful%").forEach(msg -> log.info(msg.toString()));
 
 			boolean existeAinda = clientes.existsByNome(nomeCliente1);
 			log.info("Exite um cliente com o nome "+nomeCliente1+"? "+existeAinda);
