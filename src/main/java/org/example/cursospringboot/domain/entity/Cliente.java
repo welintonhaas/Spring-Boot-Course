@@ -2,6 +2,8 @@ package org.example.cursospringboot.domain.entity;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "CLIENTE")
 public class Cliente
@@ -13,6 +15,9 @@ public class Cliente
 
 	@Column(name = "NOME",length = 100)
 	private String nome;
+
+	@OneToMany(mappedBy = "cliente")
+	private Set<Pedido> pedidos;
 
 	public Cliente(String nome)
 	{
@@ -55,4 +60,12 @@ public class Cliente
 	{
 		return "Cliente{" + "nome='" + nome + '\'' + ", id=" + id + '}';
 	}
+
+    public Set<Pedido> getPedidos() {
+        return pedidos;
+    }
+
+    public void setPedidos(Set<Pedido> pedidos) {
+        this.pedidos = pedidos;
+    }
 }
